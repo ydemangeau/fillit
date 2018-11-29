@@ -12,7 +12,9 @@
 
 #include "fillit.h"
 
-int		main()
+int		main(int argc, char **argv)
 {
+	if(arg_error(argc,argv))
+		return (0);
 	return (0);
 }

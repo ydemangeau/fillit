@@ -3,11 +3,12 @@ FLAG=-Wall -Wextra -Werror
 LIB_DIR=./libft
 LIB=./libft/libft.a
 EXEC=fillit
-SRC=src/fillit.c
+SRC=src/fillit.c \
+	src/error.c
 
 all:$(EXEC)
 
-$(EXEC) :
+$(EXEC) :$(SRC)
 		@(cd $(LIB_DIR) && $(MAKE))
 		$(CC) $(FLAG) $(SRC) $(LIB) -o $(EXEC)
 
