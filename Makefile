@@ -4,7 +4,8 @@ LIB_DIR=./libft
 LIB=./libft/libft.a
 EXEC=fillit
 SRC=src/fillit.c \
-	src/error.c
+	src/error.c \
+	src/get_next_line.c
 
 all:$(EXEC)
 

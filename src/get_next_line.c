@@ -57,7 +57,7 @@ int		new_line(char **str, int len, char **line, int fd)
 
 int		get_next_line(const int fd, char **line)
 {
-	static char		*str[OPEN_MAX];
+	static char		*str[255];
 	int				ret;
 	int				len;
 	
